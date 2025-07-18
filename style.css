@@ -8163,4 +8163,7 @@ pre.prettyprint {
     content: "\ea64";
 }
 
-/* all icon font classes list here */
+.logo-img {
+  height: 40px;
+  margin-top: -5px;
+}
