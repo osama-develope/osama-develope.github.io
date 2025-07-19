@@ -8172,6 +8172,7 @@ pre.prettyprint {
 }
 
 /* all icon font classes list here */
+/* زر Call to Action */
 .cta-button {
   font-size: 22px;
   padding: 12px 30px;
@@ -8182,20 +8183,23 @@ pre.prettyprint {
   border-radius: 30px;
   transition: 0.3s ease-in-out;
 }
-
 .cta-button:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 30px rgba(255, 99, 71, 0.8);
 }
+
+/* روابط النافبار */
 .navbar-nav .nav-item .nav-link {
   font-size: 18px;
   padding: 10px 15px;
 }
 
+/* شعار النافبار */
 .navbar-brand img {
   max-height: 50px;
 }
 
+/* استجابة لشاشات صغيرة */
 @media screen and (max-width: 768px) {
   .navbar-nav .nav-item .nav-link {
     font-size: 16px;
@@ -8205,6 +8209,7 @@ pre.prettyprint {
   }
 }
 
+/* نصوص متحركة */
 .subtitle-animated {
   font-size: 20px;
   opacity: 0;
@@ -8212,6 +8217,7 @@ pre.prettyprint {
   animation-delay: 0.5s;
 }
 
+/* حركة النصوص */
 @keyframes fadeInUp {
   from {
     transform: translateY(20px);
@@ -8223,10 +8229,12 @@ pre.prettyprint {
   }
 }
 
+/* Smooth Scroll */
 html {
   scroll-behavior: smooth;
 }
 
+/* أقسام الموقع */
 .section {
   padding: 80px 0;
 }
@@ -8242,35 +8250,47 @@ html {
   box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
+/* أيقونات الفوتر */
 .footer i {
   font-size: 24px;
   margin: 0 10px;
   color: #fff;
   transition: color 0.3s;
 }
-
 .footer i:hover {
   color: #00c3ff;
 }
 
+/* نص متغير */
 #typing-text {
   font-weight: bold;
   color: #00c3ff;
   font-family: 'Tajawal', sans-serif;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* الخطوط */
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Tajawal', 'Cairo', sans-serif;
 }
+
+/* الجسم */
 body {
   min-height: 100vh;
   width: 100%;
   background: #eeeceb;
 }
+
+/* لضمان بقاء الفوتر أسفل الصفحة */
+.wrapper {
+  padding-bottom: 120px;
+}
+
+/* الفوتر */
 footer {
   position: relative;
   background: #411f9a;
@@ -8315,40 +8335,14 @@ footer .content .top {
   text-decoration: none;
   transition: all 0.4s ease;
 }
-.top .media-icons a:nth-child(1) {
-  background: #4267b2;
-}
-.top .media-icons a:nth-child(1):hover {
-  color: #4267b2;
+.top .media-icons a:nth-child(1) { background: #4267b2; }
+.top .media-icons a:nth-child(2) { background: #1da1f2; }
+.top .media-icons a:nth-child(3) { background: #e1306c; }
+.top .media-icons a:nth-child(4) { background: #0077b5; }
+.top .media-icons a:nth-child(5) { background: #ff0000; }
+.top .media-icons a:hover {
   background: #fff;
-}
-.top .media-icons a:nth-child(2) {
-  background: #1da1f2;
-}
-.top .media-icons a:nth-child(2):hover {
-  color: #1da1f2;
-  background: #fff;
-}
-.top .media-icons a:nth-child(3) {
-  background: #e1306c;
-}
-.top .media-icons a:nth-child(3):hover {
-  color: #e1306c;
-  background: #fff;
-}
-.top .media-icons a:nth-child(4) {
-  background: #0077b5;
-}
-.top .media-icons a:nth-child(4):hover {
-  color: #0077b5;
-  background: #fff;
-}
-.top .media-icons a:nth-child(5) {
-  background: #ff0000;
-}
-.top .media-icons a:nth-child(5):hover {
-  color: #ff0000;
-  background: #fff;
+  color: inherit;
 }
 footer .content .link-boxes {
   width: 100%;
@@ -8449,6 +8443,8 @@ footer .bottom-details .bottom_text {
 .bottom-details .bottom_text a {
   margin-right: 10px;
 }
+
+/* Responsive Media Queries */
 @media (max-width: 900px) {
   footer .content .link-boxes {
     flex-wrap: wrap;
@@ -8500,9 +8496,11 @@ footer .bottom-details .bottom_text {
   }
 }
 
+/* قسم من نحن */
 .about-section {
   padding: 80px 0;
   background: linear-gradient(to right, #f6f9ff, #eef2fb);
+  margin-bottom: 80px;
 }
 
 .about-content {
@@ -8557,28 +8555,7 @@ footer .bottom-details .bottom_text {
   margin-left: 8px;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .about-text, .about-image {
-    flex: 1 1 100%;
-  }
-}
-
-
+/* خدمات Swiper */
 .swiper-container {
   width: 100%;
   padding: 60px 0;
