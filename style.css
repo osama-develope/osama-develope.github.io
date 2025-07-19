@@ -8579,18 +8579,6 @@ footer .bottom-details .bottom_text {
     flex: 1 1 100%;
   }
 }
-body {
-    background: #47289d;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .swiper-container {
     width: 100%;
