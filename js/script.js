@@ -1,4 +1,4 @@
- var searchVisible = 0;
+var searchVisible = 0;
  var transparent = true;
  
  var transparentDemo = true;
@@ -268,4 +268,51 @@
          if (immediate && !timeout) func.apply(context, args);
      };
  };
- 
+
+ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
+
+const phrases = [
+  "تصميم مواقع احترافية",
+  "إدارة المحتوى الرقمي",
+  "كتابة مقالات تسويقية",
+  "تصميم منشورات سوشيال ميديا"
+];
+
+let index = 0;
+let textIndex = 0;
+let currentPhrase = "";
+let isDeleting = false;
+
+function type() {
+  const typingDiv = document.getElementById("typing-text");
+  if (!typingDiv) return;
+
+  if (index >= phrases.length) index = 0;
+  currentPhrase = phrases[index];
+
+  typingDiv.innerHTML = currentPhrase.substring(0, textIndex) + (textIndex % 2 === 0 ? "|" : "");
+
+  if (!isDeleting && textIndex < currentPhrase.length) {
+    textIndex++;
+    setTimeout(type, 100);
+  } else if (isDeleting && textIndex > 0) {
+    textIndex--;
+    setTimeout(type, 50);
+  } else if (!isDeleting && textIndex === currentPhrase.length) {
+    isDeleting = true;
+    setTimeout(type, 1000);
+  } else {
+    isDeleting = false;
+    index++;
+    setTimeout(type, 500);
+  }
+}
+
+type();
