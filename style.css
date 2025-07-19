@@ -8222,3 +8222,37 @@ pre.prettyprint {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.section-dark {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.footer i {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer i:hover {
+  color: #00c3ff;
+}
+
+#typing-text {
+  font-weight: bold;
+  color: #00c3ff;
+  font-family: 'Cairo', sans-serif;
+}
