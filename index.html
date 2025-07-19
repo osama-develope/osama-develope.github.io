@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>ONergy | Digital Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,10 +32,6 @@
                         <a class="nav-link" href="#services">الخدمات</a>
                        </li>
                        
-                       <li class="nav-item">
-                        <a class="nav-link" href="#contact">تواصل معنا</a>
-                       </li>
-
                         <li class="nav-item">
                             <a href="#services" class="btn btn-danger btn-round cta-button arabic">اطلب الخدمة الآن</a>
                         </li>
@@ -71,47 +70,135 @@
                 </div>
             </div>
             <!-- About Section -->
-<section id="about" class="section section-light arabic">
+<section id="about" class="section section-light arabic about-section">
   <div class="container">
-    <h2 class="text-center">من نحن</h2>
-    <p class="text-center">نحن في ONergy نقدم حلول رقمية مبتكرة تساعد في تطوير أعمالك، تشمل تصميم المواقع، المحتوى، والتسويق.</p>
+    <div class="about-content">
+      <div class="about-text">
+        <h2 class="section-title">من نحن</h2>
+        <p class="section-desc">
+          ONergy هي وكالة رقمية تهدف إلى تقديم حلول إبداعية وحديثة في مجالات تصميم المواقع، تطوير المحتوى، والتسويق الرقمي. نساعدك على تحويل فكرتك إلى نجاح ملموس على الإنترنت.
+        </p>
+        <ul class="about-points">
+          <li><i class="fa fa-check-circle"></i> فريق محترف بخبرة واسعة</li>
+          <li><i class="fa fa-check-circle"></i> تصميم متجاوب وجذاب</li>
+          <li><i class="fa fa-check-circle"></i> دعم مستمر ومرونة في التعامل</li>
+        </ul>
+      </div>
+      <div class="about-image">
+        <img src="assets/about-illustration.svg" alt="من نحن">
+      </div>
+    </div>
   </div>
 </section>
+
 
 <!-- Services Section -->
 <section id="services" class="section section-dark arabic">
   <div class="container">
     <h2 class="text-center">خدماتنا</h2>
-    <p class="text-center">- تصميم مواقع<br>- كتابة مقالات<br>- إدارة محتوى رقمي<br>- تصميم منشورات سوشيال</p>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="section section-light arabic">
-  <div class="container">
-    <h2 class="text-center">تواصل معنا</h2>
-    <p class="text-center">راسلنا على واتساب أو تليجرام عبر الأزرار في الأسفل.</p>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+<div class="swiper-slide" style="background-image:url(assets/service1.jpg)"></div>
+<div class="swiper-slide" style="background-image:url(assets/service2.jpg)"></div>
+<div class="swiper-slide" style="background-image:url(assets/service3.jpg)"></div>
+<div class="swiper-slide" style="background-image:url(assets/service4.jpg)"></div>
+        <!-- أضف المزيد حسب الصور -->
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
   </div>
 </section>
 
         </div>
-        <footer class="footer section-dark arabic">
-  <div class="container text-center">
-    <p>تابعنا على:</p>
-    <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-    <a href="https://www.facebook.com/share/18Mkm2hGgZ/" target="_blank"><i class="fa fa-facebook-square"></i></a>
-    <a href="https://www.instagram.com/icom" target="_blank"><i class="fa fa-instagram"></i></a>
-    <a href="https://github.com/osama-develope" target="_blank"><i class="fa fa-github"></i></a>
-    <p style="margin-top: 10px;">© 2025 ONergy - All Rights Reserved</p>
+        
+  <div class="content">
+    <div class="top">
+      <div class="logo-details">
+        <i class="fab fa-slack"></i>
+        <span class="logo_name">ICOM DIGITAL</span>
+      </div>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="link-boxes">
+      <ul class="box">
+        <li class="link_name">Company</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Get started</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Services</li>
+        <li><a href="#">App design</a></li>
+        <li><a href="#">Web design</a></li>
+        <li><a href="#">Logo design</a></li>
+        <li><a href="#">Banner design</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Account</li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">My account</a></li>
+        <li><a href="#">Prefrences</a></li>
+        <li><a href="#">Purchase</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Courses</li>
+        <li><a href="#">HTML & CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">Photography</a></li>
+        <li><a href="#">Photoshop</a></li>
+      </ul>
+      <ul class="box input-box">
+        <li class="link_name">Subscribe</li>
+        <li><input type="text" placeholder="Enter your email"></li>
+        <li><input type="button" value="Subscribe"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2024 <a href="https://icom-digital.com/">ICOM DIGITAL </a>All rights reserved</span>
+      <span class="policy_terms">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms & condition</a>
+      </span>
+    </div>
   </div>
 </footer>
-
 
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="main.js"></script>
     <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 20,
+      stretch: 0,
+      depth: 200,
+      modifier: 1,
+      slideShadows: true,
+    },
+    loop: true,
+  });
+</script>
+
 
     </body>
 </html>
