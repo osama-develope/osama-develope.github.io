@@ -8272,11 +8272,9 @@ body {
   background: #eeeceb;
 }
 footer {
-  position: fixed;
+  position: relative;
   background: #411f9a;
   width: 100%;
-  bottom: 0;
-  left: 0;
 }
 footer::before {
   content: "";
